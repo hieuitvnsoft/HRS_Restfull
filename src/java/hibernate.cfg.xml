@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://localhost\MSI\SQLEXPRESS:1433;databaseName=HIEURINSHOP</property>
+    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.password">1234$</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="entities.TblAdmin"/>
+    <mapping class="entities.TblAssess"/>
+    <mapping class="entities.TblChat"/>
+    <mapping class="entities.TblColor"/>
+    <mapping class="entities.TblComment"/>
+    <mapping class="entities.TblDiscount"/>
+    <mapping class="entities.TblDiscountCode"/>
+    <mapping class="entities.TblLiked"/>
+    <mapping class="entities.TblNews"/>
+    <mapping class="entities.TblOrder"/>
+    <mapping class="entities.TblOrderDetail"/>
+    <mapping class="entities.TblProducer"/>
+    <mapping class="entities.TblProduct"/>
+    <mapping class="entities.TblProductDetail"/>
+    <mapping class="entities.TblProductType"/>
+    <mapping class="entities.TblReplly"/>
+    <mapping class="entities.TblShipMethod"/>
+    <mapping class="entities.TblSize"/>
+    <mapping class="entities.TblSubProductType"/>
+    <mapping class="entities.TblTypeNew"/>
+    <mapping class="entities.TblUser"/>
+    <mapping class="entities.TblUserInfShip"/>
+    <mapping class="entities.TblPaymentMethod"/>
+  </session-factory>
+</hibernate-configuration>
